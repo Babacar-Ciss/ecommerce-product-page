@@ -1,6 +1,6 @@
 import styled from "styled-components";
 import { useState } from "react";
-import Store from "../hooks/store";
+import Store from "../hooks/Store";
 import StoreAnnexe from "../hooks/StoreAnnexe";
 
 
