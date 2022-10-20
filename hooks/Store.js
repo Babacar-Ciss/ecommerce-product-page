@@ -21,6 +21,7 @@ const Store = create((set) => ({
 
   // Quantity to order
   quantity : 0,
+  UpdateQuantity : (newQuantity) => set((state) => ({quantity : newQuantity})),
   setQuantityIncrease : () => set((state) => ({quantity : state.quantity + 1})),
   setQuantityDecrease : () => set((state) => ({quantity : state.quantity <= 0 ? 0 : (+state.quantity - 1)})),
   reinitializeQuantity : () => set({quantity : 0}),

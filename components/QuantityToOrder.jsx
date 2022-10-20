@@ -76,23 +76,33 @@ const Quantity = styled.p`
 const QuantityToOrder = () => {
 
     const quantity = Store((state) => state.quantity);
+    const UpdateQuantity = Store((state) => state.UpdateQuantity);
     const setQuantityIncrease = Store((state) => state.setQuantityIncrease);
     const setQuantityDecrease = Store((state) => state.setQuantityDecrease);
     const reinitializeQuantity = Store((state) => state.reinitializeQuantity)
     const AddItemToCart= Store((state) => state.AddItemToCart);
-
+    const listOfItem = Store((state) => state.listOfItem);
 
     const addItemHandler = () => {
-        if (quantity === 0) return
+        const isOnArray = listOfItem.some(el => el.name === "Fall Limited Edition Sneakers");
 
+
+        if (quantity === 0) return
         reinitializeQuantity();
-        
-        return (
-            AddItemToCart({
-                            image : "image-product-1.jpg",
-                            name : "Fall Limited Edition Sneakers",
-                            price : 125.00,
-                            quantity : quantity}))
+
+        if(isOnArray) {
+         let currentIndex = null;
+         listOfItem.forEach((item, index) => item.name === "Fall Limited Edition Sneakers" ? currentIndex = index : null)   
+         listOfItem[currentIndex].quantity = quantity;
+         reinitializeQuantity();
+        }else {
+            return (
+                AddItemToCart({
+                                image : "image-product-1.jpg",
+                                name : "Fall Limited Edition Sneakers",
+                                price : 125.00,
+                                quantity : quantity}))
+        }     
     }
 
 
