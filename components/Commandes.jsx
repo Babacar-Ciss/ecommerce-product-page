@@ -17,7 +17,7 @@ const CommandeStyle = styled.div`
     flex-direction: column;
 
 
-    @media (min-width = 375px) and (max-width = 1439px) {
+    @media (min-width : 375px) and (max-width : 1439px) {
         width: 95.5%;
         right: 2.2%;
         top: 76px;
