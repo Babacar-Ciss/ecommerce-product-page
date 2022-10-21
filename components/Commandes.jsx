@@ -17,7 +17,7 @@ const CommandeStyle = styled.div`
     flex-direction: column;
 
 
-    @media (375px <= width <= 1439px) {
+    @media (min-width = 375px) and (max-width = 1439px) {
         width: 95.5%;
         right: 2.2%;
         top: 76px;
@@ -69,10 +69,6 @@ const Commandes = () => {
                             quantity = {list.quantity}
                             index = {index}
                         />))
-
-
-        
-
     return (
         <>
             { showCart ? (  
@@ -84,10 +80,6 @@ const Commandes = () => {
                                                          <Link href="/#"><CheckoutButton>Checkout</CheckoutButton></Link>
                                                     </> 
                                                     : (<EmptyMessage>Your cart is empty.</EmptyMessage>)
-                                    }
-
-                                    {
-                                        console.log(listOfItem)
                                     }
                                 </CommandeStyle>
                             )

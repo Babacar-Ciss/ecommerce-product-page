@@ -11,7 +11,7 @@ const HeadStyle = styled.div`
     align-items: center;
     border-bottom: 1px solid #E4E9F2;
 
-    @media (375px <= width <= 1439px) {
+    @media (min-width = 375px) and (max-width = 1439px) {
         border: none;
         padding-inline: 24px;
     }
@@ -21,7 +21,7 @@ const IMGLogo = styled.img`
     margin-right: 56px;
     padding-bottom: 45px;
     
-    @media (375px <= width <= 1439px) {
+    @media (min-width = 375px) and (max-width = 1439px) {
         margin-right: 0;
         padding-bottom: 0;
     }
@@ -39,7 +39,7 @@ const IMGUser = styled.img`
     outline: 1px solid transparent;
     transition: all .1s;
 
-    @media (375px <= width <= 1439px) {
+    @media (min-width = 375px) and (max-width = 1439px) {
         width: 24px;
         height: 24px;
         margin-left: 22px;
@@ -54,7 +54,7 @@ const IMGHamburger = styled.img`
     display: none;
     cursor: pointer;
 
-    @media (375px <= width <= 1439px) {
+    @media (min-width = 375px) and (max-width = 1439px) {
         display: block;
         align-self: center;
         margin-right: 16px;

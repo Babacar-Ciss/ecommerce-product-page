@@ -7,7 +7,7 @@ const ProductDetailsStyle = styled.div`
     flex-direction: column;
     padding-top: 60px;
 
-    @media (375px <= width <= 1439px) {
+    @media (min-width = 375px) and (max-width = 1439px) {
        width: 100%;
        padding-inline: 24px;
        padding-top: 0;
@@ -23,7 +23,7 @@ const BrandTitle = styled.p`
     text-transform: uppercase;
     margin-bottom: 24px;
 
-    @media (375px <= width <= 1439px) {
+    @media (min-width = 375px) and (max-width = 1439px) {
        font-size: 12px;
        line-height: 15px;
        margin-bottom: 16px;
@@ -39,7 +39,7 @@ const ProductName = styled.h1`
     color: #1D2026;
     margin-bottom: 32px;
 
-    @media (375px <= width <= 1439px) {
+    @media (min-width = 375px) and (max-width = 1439px) {
        font-size: 28px;
        line-height: 32px;
        margin-bottom: 15px;
@@ -52,7 +52,7 @@ const Details = styled.p`
     font-weight: 400;
     margin-bottom: 32px;
 
-    @media (375px <= width <= 1439px) {
+    @media (min-width = 375px) and (max-width = 1439px) {
        font-size: 15px;
        line-height: 25px;
        margin-bottom: 28px;
@@ -63,7 +63,7 @@ const PriceAndDiscountContainer = styled.div`
     flex-wrap: wrap;
     margin-bottom: 32px;
 
-    @media (375px <= width <= 1439px) {
+    @media (min-width = 375px) and (max-width = 1439px) {
        flex-wrap: nowrap;
        align-items: center;
     }
@@ -96,7 +96,7 @@ const PriceWithNoDiscount = styled.p`
     text-decoration-line: line-through;
     flex-basis: 100%;
 
-    @media (375px <= width <= 1439px) {
+    @media (min-width = 375px) and (max-width = 1439px) {
        text-align: right;
     }
 `

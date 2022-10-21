@@ -10,7 +10,7 @@ const GalleryStyle = styled.div`
     flex-wrap: wrap;
     justify-content: space-between;
 
-    @media (375px <= width <= 1439px) {
+    @media (min-width = 375px) and (max-width = 1439px) {
         display: none;
     }
 `
@@ -71,8 +71,6 @@ const Gallery = () => {
         }
     }
 
-    
-    
     const DataImagesDisplay = DataImages.map((data, index) =>  activeImage === index ?      (
                                                                     <SubImageContainerActive key = {data+index} 
                                                                                   path = {data.path} 

@@ -5,7 +5,7 @@ const SliderMobileStyle = styled.div`
      display: none;
      z-index: 1;
     
-     @media (375px <= width <= 1439px) {
+     @media (min-width = 375px) and (max-width = 1439px) {
         display: block;
         width: 100%;
         height: 50%;
