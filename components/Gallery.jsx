@@ -10,7 +10,7 @@ const GalleryStyle = styled.div`
     flex-wrap: wrap;
     justify-content: space-between;
 
-    @media (min-width = 375px) and (max-width = 1439px) {
+    @media (min-width : 375px) and (max-width : 1439px) {
         display: none;
     }
 `

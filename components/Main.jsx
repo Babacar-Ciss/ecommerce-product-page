@@ -12,7 +12,7 @@ const MainStyle = styled.main`
     margin-top: 100px;
     padding-bottom: 132px;
 
-    @media (min-width = 375px) and (max-width = 1439px) {
+    @media (min-width : 375px) and (max-width : 1439px) {
        flex-direction: column;
        margin-top: 25px;
        width: 100%;

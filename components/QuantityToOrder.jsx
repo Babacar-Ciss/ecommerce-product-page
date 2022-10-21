@@ -5,7 +5,7 @@ import Store from "../hooks/Store.js"
 const QuantityToOrderStyle = styled.div`
     display: flex;
 
-    @media (min-width = 375px) and (max-width = 1439px) {
+    @media (min-width : 375px) and (max-width : 1439px) {
        flex-wrap: wrap;
     }
 
@@ -20,7 +20,7 @@ const QuantityToOrderStyle = styled.div`
         cursor: pointer;
 
 
-        @media (min-width = 375px) and (max-width = 1439px) {
+        @media (min-width : 375px) and (max-width : 1439px) {
             flex-grow: 1;
         }
     }
@@ -47,7 +47,7 @@ const ButtonCart = styled.button`
     margin-left: 16px;
     transition: background-color 0.5s;
 
-    @media (min-width = 375px) and (max-width = 1439px) {
+    @media (min-width : 375px) and (max-width : 1439px) {
         flex-basis: 100%;
         background-position: 30%;
         background-size: 17px;

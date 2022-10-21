@@ -14,7 +14,7 @@ const PanierStyle = styled.div`
         transition: all 0.4s;
     }
 
-    @media (min-width = 375px) and (max-width = 1439px) {
+    @media (min-width : 375px) and (max-width : 1439px) {
         padding-bottom: 0;
         margin-left: auto;
         margin-bottom: -4px;

@@ -11,7 +11,7 @@ const LayoutStyle = styled.div`
     padding-top: 41px;
     margin-inline: auto;
 
-    @media (min-width = 375px) and (max-width = 1439px) {
+    @media (min-width : 375px) and (max-width : 1439px) {
         width: 100%;
         padding-top: 19px;
     }
