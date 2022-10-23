@@ -54,7 +54,6 @@ const IMG = styled.img`
     cursor: pointer;
 `
 
-
 const Overlay = () => {
     const CloseMenuModal = Store((state) => state.CloseMenuModal);
 

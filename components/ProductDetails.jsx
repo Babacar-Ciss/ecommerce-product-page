@@ -101,7 +101,6 @@ const PriceWithNoDiscount = styled.p`
     }
 `
 
-
 const ProductDetails = () => {
     return (
         <ProductDetailsStyle>
