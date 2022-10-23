@@ -50,6 +50,7 @@ const IMGUser = styled.img`
         outline: 2px solid #FF7E1B;
     }
 `
+
 const IMGHamburger = styled.img`
     display: none;
     cursor: pointer;

@@ -76,7 +76,7 @@ const Quantity = styled.p`
 const QuantityToOrder = () => {
 
     const quantity = Store((state) => state.quantity);
-    const UpdateQuantity = Store((state) => state.UpdateQuantity);
+    const UpdatelistOfItem = Store((state) => state.UpdatelistOfItem);
     const setQuantityIncrease = Store((state) => state.setQuantityIncrease);
     const setQuantityDecrease = Store((state) => state.setQuantityDecrease);
     const reinitializeQuantity = Store((state) => state.reinitializeQuantity)
@@ -92,8 +92,11 @@ const QuantityToOrder = () => {
         if(isOnArray) {
          let currentIndex = null;
          listOfItem.forEach((item, index) => item.name === "Fall Limited Edition Sneakers" ? currentIndex = index : null)   
-         listOfItem[currentIndex].quantity = quantity;
-         reinitializeQuantity();
+
+        UpdatelistOfItem(listOfItem,currentIndex, quantity)
+
+        reinitializeQuantity();
+
         }else {
             return (
                 AddItemToCart({
@@ -103,7 +106,6 @@ const QuantityToOrder = () => {
                                 quantity : quantity}))
         }     
     }
-
 
     return (
         <QuantityToOrderStyle>

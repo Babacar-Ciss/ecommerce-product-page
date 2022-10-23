@@ -28,8 +28,10 @@ const Store = create((set) => ({
 
   //Cart Item add
   listOfItem : [],
+  UpdatelistOfItem : (list, indexToDelete, newQuantity) => set((state) => ({listOfItem : list.map((item,index) => indexToDelete === index ?  {...item, quantity : newQuantity}   : item)})),
   AddItemToCart : (item) => set((state) => ({listOfItem : [...state.listOfItem, item]})),
-  RemoveItemFromCart : (index) => set((state) => ({listOfItem : state.listOfItem.filter((_,ind) => index !== ind)}))
+  RemoveItemFromCart : (index) => set((state) => ({listOfItem : state.listOfItem.filter((_,ind) => index !== ind)})),
+  GetTotalItems : (list) => set((state) => ({totalItems : list.reduce(((prev, curr) => prev + curr.quantity), 0)})),
 }))
 
 

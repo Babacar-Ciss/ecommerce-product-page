@@ -30,7 +30,6 @@ const ProductNameAndTotalAmongContainer = styled.div`
     flex-direction: column;
 `
 
-
 const TotalAmongContainer = styled.div`
     display: flex;
     justify-content: stretch;
@@ -53,8 +52,6 @@ const ItemsOrdered = (props) => {
 
     const totalAmount  = props.unitPrice * props.quantity;
     const RemoveItemFromCart = Store((state) => state.RemoveItemFromCart);
-    const listOfItem = Store((state) => state.listOfItem);
-
 
     return (
         <ItemsOrderedStyle>

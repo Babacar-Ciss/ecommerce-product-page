@@ -67,8 +67,7 @@ const Commandes = () => {
                             name = {list.name}
                             unitPrice = {list.price}
                             quantity = {list.quantity}
-                            index = {index}
-                        />))
+                            index = {index}/>))
     return (
         <>
             { showCart ? (  
