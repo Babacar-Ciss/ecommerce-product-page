@@ -5,7 +5,7 @@ import SliderMobile from "./SliderMobile";
 
 
 const MainStyle = styled.main`
-    width: 91%;
+    max-width: 91%;
     margin-inline: auto;
     display: flex;
     justify-content: space-between;

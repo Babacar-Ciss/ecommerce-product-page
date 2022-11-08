@@ -26,7 +26,8 @@ const Layout = ({children}) => {
     return (
         <LayoutStyle>
             <Head />
-            {MenuModal ? <Overlay /> : null}
+            {/* {MenuModal ? <Overlay /> : null} */}
+            <Overlay />
             {showModalGallery ? <ModalGallery /> : null}         
             {children}
         </LayoutStyle>

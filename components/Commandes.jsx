@@ -2,9 +2,10 @@ import styled from "styled-components";
 import ItemsOrdered from "./ItemsOrdered";
 import Store from "../hooks/Store";
 import Link from "next/link";
+import { motion, AnimatePresence } from "framer-motion";
 
 
-const CommandeStyle = styled.div`
+const CommandeStyle = styled(motion.div)`
     z-index: 100;
     width: 360px;
     position: absolute;
@@ -70,8 +71,13 @@ const Commandes = () => {
                             index = {index}/>))
     return (
         <>
+        <AnimatePresence>
             { showCart ? (  
-                            <CommandeStyle onMouseLeave={setShowCartClose}>
+                            <CommandeStyle 
+                                onMouseLeave={setShowCartClose}
+                                initial={{ opacity: 0 }}
+                                animate={{ opacity: 1, transition : { duration : 0.2} }}
+                                exit={{ opacity: 0 }}>
                             <P>Cart</P>
                                     {
                                         listOfItem.length !== 0  ? <>
@@ -84,6 +90,7 @@ const Commandes = () => {
                             )
                         : null
                     }
+        </AnimatePresence>
         </>);
 }
 

@@ -97,7 +97,8 @@ const QuantityToOrder = () => {
 
         reinitializeQuantity();
 
-        }else {
+        }
+        else {
             return (
                 AddItemToCart({
                                 image : "image-product-1.jpg",

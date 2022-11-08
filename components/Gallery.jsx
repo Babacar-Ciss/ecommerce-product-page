@@ -2,6 +2,7 @@ import styled from "styled-components";
 import Store from "../hooks/Store";
 import { useState } from "react";
 import StoreAnnexe from "../hooks/StoreAnnexe";
+import { motion } from "framer-motion";
 
 
 const GalleryStyle = styled.div`
@@ -54,6 +55,8 @@ const DataImages = [{name : "image-product-1", path : "./assets/image-product-1.
                     {name : "image-product-3", path : "./assets/image-product-3.jpg"},
                     {name : "image-product-4", path : "./assets/image-product-4.jpg"},
                 ] 
+
+
 
 const Gallery = () => {
 

@@ -1,5 +1,6 @@
 import styled from "styled-components";
 import Store from "../hooks/Store";
+import { motion } from "framer-motion";
 
 const PanierStyle = styled.div`
     position: relative;
